@@ -1,0 +1,18 @@
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+
+  margin-bottom: 50px;
+}
+.about-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item + .about-item {
+  min-width: 370px;
+  margin-left: 30px;
+}
