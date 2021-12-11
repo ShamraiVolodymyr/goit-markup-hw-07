@@ -52,6 +52,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .command-social-list {
   display: flex;
   justify-content: center;
@@ -77,12 +78,11 @@
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-}
-
-.command-social-link:hover,
-.command-social-link:focus {
-  background-color: #2196f3;
-  color: var(--main-title-color);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: var(--main-title-color);
+  }
 }
 
 .command-social-icon {

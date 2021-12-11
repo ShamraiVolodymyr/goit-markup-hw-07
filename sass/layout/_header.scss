@@ -13,10 +13,9 @@
   color: var(--logo-color);
 
   margin-right: 70px;
-}
-
-.header-logo:focus {
-  color: var(--accent-color);
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .span {
@@ -55,22 +54,20 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-icon {
   fill: currentColor;
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-icon:hover,
-.header-icon:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .header-tel {
@@ -86,9 +83,8 @@
   color: var(--main-btn-color);
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

@@ -95,15 +95,15 @@
   justify-content: center;
   color: var(--main-title-color);
   background: rgba(255, 255, 255, 0.1);
-}
-.connect-footer-icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: var(--main-title-color);
+  }
 }
 
-.connect-footer-link:hover,
-.connect-footer-link:focus {
-  background-color: #2196f3;
-  color: var(--main-title-color);
+.connect-footer-icon {
+  fill: currentColor;
 }
 
 .subscribe-form {
@@ -126,13 +126,6 @@
   margin-top: 20px;
   position: relative;
 }
-.subscribe-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .subscribe-input {
   background-color: #2f303a;
@@ -145,7 +138,14 @@
   border-radius: 4px;
   top: 50%;
   padding-left: 16px;
-}
-.subscribe-input:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

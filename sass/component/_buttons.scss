@@ -12,11 +12,10 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header-btn:hover,
-.header-btn:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .hero-btn {
@@ -36,9 +35,8 @@
   border: 1px solid var(--logo-color);
   border-radius: 4px;
   margin-top: auto;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  border: 1px solid var(--logo-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--logo-color);
+  }
 }
