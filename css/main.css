@@ -886,15 +886,15 @@ body {
   bottom: 0px;
 }
 
-.nav__item {
+.header__connect {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__item:hover, .nav__item:focus {
+.header__connect:hover, .header__connect:focus {
   fill: var(--accent-color);
 }
 
-.nav__item:not(:last-child) {
+.header__connect:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -974,7 +974,7 @@ body {
   color: var(--main-text-color);
 }
 
-.port-header {
+.port__header {
   border-bottom: 1px solid #ececec;
 }
 
