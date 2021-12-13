@@ -16,15 +16,7 @@
   text-align: center;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.centered {
-  text-align: center;
-}
-.document-title {
+.hero__title {
   font-family: inherit;
   font-weight: 900;
   font-size: 44px;
@@ -38,17 +30,18 @@
   margin-bottom: 30px;
 }
 
-.hero-list {
+.skill__list {
   display: flex;
   justify-content: center;
 }
-.hero-item + .hero-item {
+
+.skill__item + .skill__item {
   width: 270px;
   height: 120px;
   margin-left: 30px;
 }
 
-.hero-title {
+.skill__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -57,7 +50,7 @@
   margin-bottom: 10px;
 }
 
-.hero-post-title {
+.skill__post-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

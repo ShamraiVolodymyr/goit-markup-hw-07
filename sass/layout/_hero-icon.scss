@@ -1,18 +1,13 @@
-.hero-list-icon {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-item-icon {
+.skill__pre-title {
   width: 270px;
   height: 120px;
 }
-.hero-item-icon + .hero-item-icon {
+.skill__pre-title + .skill__pre-title {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.hero-link {
+.skill__link {
   width: 100%;
   height: 100%;
 
