@@ -1,9 +1,9 @@
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -27,22 +27,22 @@
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.header__list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link {
+.header__link {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -60,7 +60,7 @@
   }
 }
 
-.header-icon {
+.header__icon {
   fill: currentColor;
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
