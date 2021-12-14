@@ -195,6 +195,15 @@ body {
   position: relative;
 }
 
+.modal-field__form {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  margin: 11px 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-field__comm {
   width: 100%;
   height: 120px;
@@ -217,22 +226,13 @@ body {
   border-color: #2196f3;
 }
 
-.modal-field__form {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 0;
-  margin: 11px 12px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hero__btn--submit {
   margin-left: 50%;
   margin-top: 30px;
   transform: translateX(-50%);
 }
 
-.check-text {
+.modal-field__check-text {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;
@@ -244,7 +244,7 @@ body {
   margin-top: 20px;
 }
 
-.check-item {
+.modal-field__check-item {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -255,15 +255,15 @@ body {
   justify-content: center;
 }
 
-.check-icon {
+.modal-field__check-icon {
   fill: #ffffff;
 }
 
-.modal-check {
+.modal-field__check {
   border: 1px solid #2f303a;
 }
 
-.modal-check:checked + .check-text .check-item {
+.modal-field__check:checked + .modal-field__check-text .modal-field__check-item {
   background-color: var(--accent-color);
   border: none;
 }
@@ -277,7 +277,7 @@ body {
   color: #2196f3;
 }
 
-.visually-hidden {
+.modal-field--visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -866,7 +866,7 @@ body {
   width: 270px;
 }
 
-.header--current::after {
+.header__link--current::after {
   content: " ";
   position: absolute;
   display: block;
