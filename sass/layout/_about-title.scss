@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.position::after {
+.about__position::after {
   position: absolute;
   content: " ";
   display: flex;
@@ -28,12 +28,12 @@
   letter-spacing: 0.03em;
 }
 
-.position-desc::after {
+.about__desc::after {
   content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
 }
-.position-mob::after {
+.about__mob::after {
   content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
 }
-.position-disain::after {
+.about__disain::after {
   content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
 }

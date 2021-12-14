@@ -135,11 +135,11 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover {
+.modal__close:hover {
   fill: #2196f3;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
@@ -149,7 +149,11 @@ body {
   margin-bottom: 12px;
 }
 
-.modal-form-input {
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-field__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -162,22 +166,22 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus {
+.modal-field__input:focus {
   border-color: #2196f3;
 }
 
-.modal-form-input:focus + .svg-form {
+.modal-field__input:focus + .svg-form {
   fill: #2196f3;
 }
 
-.modal-form-input::placeholder {
+.modal-field__input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
-.form-input-text {
+.modal-field__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -187,7 +191,11 @@ body {
   display: block;
 }
 
-.modal-form-text {
+.modal-field__svg {
+  position: relative;
+}
+
+.modal-field__comm {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -205,15 +213,11 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-text:focus {
+.modal-field__comm:focus {
   border-color: #2196f3;
 }
 
-.input-svg {
-  position: relative;
-}
-
-.svg-form {
+.modal-field__form {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -222,11 +226,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-field {
-  margin-bottom: 10px;
-}
-
-.submit {
+.hero__btn--submit {
   margin-left: 50%;
   margin-top: 30px;
   transform: translateX(-50%);
@@ -351,7 +351,7 @@ body {
   position: relative;
 }
 
-.position::after {
+.about__position::after {
   position: absolute;
   content: " ";
   display: flex;
@@ -371,15 +371,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.position-desc::after {
+.about__desc::after {
   content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
 }
 
-.position-mob::after {
+.about__mob::after {
   content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
 }
 
-.position-disain::after {
+.about__disain::after {
   content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
 }
 
@@ -587,7 +587,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__link--adress {
+.footer__adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
