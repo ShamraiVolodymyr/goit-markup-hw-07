@@ -25,11 +25,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.command__card {
+.command-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.command__card--name {
+.command-card__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-.command__card--position {
+.command-card__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -51,21 +51,21 @@
   margin-bottom: 16px;
 }
 
-.command__social--list {
+.command-card__list {
   display: flex;
   justify-content: center;
 }
 
-.command__social--item {
+.command-card__item {
   width: 44px;
   height: 44px;
 }
 
-.command__social--item + .command__social--item {
+.command-card__item + .command-card__item {
   margin-left: 10px;
 }
 
-.command__social--link {
+.command-card__link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
@@ -83,6 +83,6 @@
   }
 }
 
-.command__social--icon {
+.command-card__icon {
   fill: currentColor;
 }
