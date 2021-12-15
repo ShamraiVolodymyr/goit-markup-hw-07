@@ -2,7 +2,7 @@
   background-color: #f5f4fa;
 }
 
-.command__title {
+.command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -11,11 +11,11 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.command__list {
+.command-list {
   display: flex;
 }
 
-.command__item {
+.command-list__item {
   min-width: 270px;
   margin-right: 30px;
   display: block;
@@ -25,11 +25,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.command-card {
+.command-list__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.command-card__name {
+.command-list__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-.command-card__position {
+.command-list__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;

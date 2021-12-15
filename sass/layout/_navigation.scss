@@ -1,4 +1,4 @@
-.header__link--current::after {
+.header-list__link--current::after {
   content: " ";
   position: absolute;
   display: block;
@@ -11,7 +11,7 @@
   bottom: 0px;
 }
 
-.header__connect {
+.header-connect {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {

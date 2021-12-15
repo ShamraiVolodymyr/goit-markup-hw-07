@@ -1,4 +1,7 @@
-.about__title {
+.about-title {
+  display: block;
+  text-align: center;
+  align-items: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -7,12 +10,49 @@
 
   margin-bottom: 50px;
 }
-.about__list {
+
+.about-title__about-list {
   display: flex;
   justify-content: center;
 }
 
-.about__item + .about__item {
+.about-list__item + .about-list__item {
   min-width: 370px;
   margin-left: 30px;
+}
+.about-list__item {
+  display: block;
+  position: relative;
+}
+
+.about-list__position::after {
+  position: absolute;
+  content: " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  color: var(--main-title-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about-list__desc::after {
+  content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
+}
+.about-list__mob::after {
+  content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
+}
+.about-list__disain::after {
+  content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
 }

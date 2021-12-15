@@ -35,24 +35,6 @@ body {
   padding-bottom: 94px;
 }
 
-.header__btn {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-btn-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header__btn:hover, .header__btn:focus {
-  color: var(--accent-color);
-}
-
 .hero__btn {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
@@ -342,21 +324,40 @@ body {
   pointer-events: none;
 }
 
-.about__title {
+.about-title {
+  display: block;
   text-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-bottom: 50px;
 }
 
-.about__item {
+.about-title__about-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-list__item + .about-list__item {
+  min-width: 370px;
+  margin-left: 30px;
+}
+
+.about-list__item {
   display: block;
   position: relative;
 }
 
-.about__position::after {
+.about-list__position::after {
   position: absolute;
   content: " ";
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
   color: var(--main-title-color);
@@ -371,35 +372,16 @@ body {
   letter-spacing: 0.03em;
 }
 
-.about__desc::after {
+.about-list__desc::after {
   content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
 }
 
-.about__mob::after {
+.about-list__mob::after {
   content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
 }
 
-.about__disain::after {
+.about-list__disain::after {
   content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
-}
-
-.about__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-  margin-bottom: 50px;
-}
-
-.about__list {
-  display: flex;
-  justify-content: center;
-}
-
-.about__item + .about__item {
-  min-width: 370px;
-  margin-left: 30px;
 }
 
 .client__title {
@@ -461,7 +443,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.command__title {
+.command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -471,11 +453,11 @@ body {
   margin-bottom: 50px;
 }
 
-.command__list {
+.command-list {
   display: flex;
 }
 
-.command__item {
+.command-list__item {
   min-width: 270px;
   margin-right: 30px;
   display: block;
@@ -484,12 +466,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.command-card {
+.command-list__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.command-card__name {
+.command-list__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -499,7 +481,7 @@ body {
   text-align: center;
 }
 
-.command-card__position {
+.command-list__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -726,22 +708,32 @@ body {
   color: var(--second-title-color);
 }
 
-.header__nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.header__list {
+.header-list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.header__item:not(:last-child) {
+.header-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header__link {
+.header-connect {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-connect__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list__link {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -755,21 +747,21 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:hover, .header__link:focus {
+.header-list__link:hover, .header-list__link:focus {
   color: var(--accent-color);
 }
 
-.header__icon {
+.header-connect__icon {
   fill: currentColor;
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon:hover, .header__icon:focus {
+.header-connect__icon:hover, .header-connect__icon:focus {
   fill: var(--accent-color);
 }
 
-.header__tel {
+.header-connect__btn {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
@@ -783,21 +775,29 @@ body {
   padding-bottom: 32px;
 }
 
-.header__tel:hover, .header__tel:focus {
+.header-connect__btn:hover, .header-connect__btn:focus {
   color: var(--accent-color);
 }
 
-.skill__pre-title {
-  width: 270px;
-  height: 120px;
+.header-connect__tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-btn-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.skill__pre-title + .skill__pre-title {
-  margin-left: 30px;
-  margin-bottom: 30px;
+.header-connect__tel:hover, .header-connect__tel:focus {
+  color: var(--accent-color);
 }
 
-.skill__link {
+.skill-list__link {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -837,18 +837,28 @@ body {
   margin-bottom: 30px;
 }
 
-.skill__list {
+.skill-list {
   display: flex;
   justify-content: center;
 }
 
-.skill__item + .skill__item {
+.skill-list__item + .skill-list__item {
   width: 270px;
   height: 120px;
   margin-left: 30px;
 }
 
-.skill__title {
+.skill-list__pre-title {
+  width: 270px;
+  height: 120px;
+}
+
+.skill-list__pre-title + .skill-list__pre-title {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.skill-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -857,7 +867,7 @@ body {
   margin-bottom: 10px;
 }
 
-.skill__post-title {
+.skill-list__post-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -866,7 +876,7 @@ body {
   width: 270px;
 }
 
-.header__link--current::after {
+.header-list__link--current::after {
   content: " ";
   position: absolute;
   display: block;
@@ -877,15 +887,15 @@ body {
   bottom: 0px;
 }
 
-.header__connect {
+.header-connect {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__connect:hover, .header__connect:focus {
+.header-connect:hover, .header-connect:focus {
   fill: var(--accent-color);
 }
 
-.header__connect:not(:last-child) {
+.header-connect:not(:last-child) {
   margin-right: 50px;
 }
 
